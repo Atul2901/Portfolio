@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Main sections styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* Section headings */
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #343a40;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* About section styles */
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Project section styles */
+        .project-section {
+            margin-bottom: 30px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            background-color: #f1f8ff;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Resume section styles */
+        .resume-section {
+            margin-bottom: 30px;
+        }
+
+        .resume-item {
+            margin-bottom: 10px;
+        }
+
+        .resume-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: #343a40;
+        }
+
+        .resume-item p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Contact section styles */
+        .contact-section {
+            margin-bottom: 30px;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself, your background, skills, and interests.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Designed and developed a stylish static food website showcasing culinary expertise and recipes.</p>
+                <a href="atulfoods.ccbp.tech">FoodMunch</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Independently Conceptualized, designed and developed static websites showcasing tourist destination and travel information</p>
+                <a href="atultourism.ccbp.tech">Tourism</a>
+            </div>
+
+        </section>
+
+        <section class="resume-section">
+            <h2>Resume</h2>
+            <div class="resume-item">
+                <h3>Education</h3>
+                <p>Bachelor's Degree, IITK, 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>Experience</h3>
+                <p>Web Developer, Encryptix, May'24-June'24</p>
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Email: achaudhary4315@gmail.com</p>
+            <p>Phone: +91-9140933625</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
